@@ -43,7 +43,7 @@ public class GameHandler : MonoBehaviour {
                         updateStatsDisplay();
                   }
                   if (damage > 0){
-                        player.GetComponent<PlayerHurt>().playerHit();       //play GetHit animation
+                        //player.GetComponent<PlayerHurt>().playerHit();       //play GetHit animation
                   }
             }
 
@@ -68,14 +68,14 @@ public class GameHandler : MonoBehaviour {
       }
 
       public void playerDies(){
-            player.GetComponent<PlayerHurt>().playerDead();       //play Death animation
+            //player.GetComponent<PlayerHurt>().playerDead();       //play Death animation
             lastLevelDied = sceneName;       //allows replaying the Level where you died
             StartCoroutine(DeathPause());
       }
 
       IEnumerator DeathPause(){
-            player.GetComponent<PlayerMove>().isAlive = false;
-            player.GetComponent<PlayerJump>().isAlive = false;
+            //player.GetComponent<PlayerMove>().isAlive = false;
+            //player.GetComponent<PlayerJump>().isAlive = false;
             yield return new WaitForSeconds(1.0f);
             SceneManager.LoadScene("EndLose");
       }
