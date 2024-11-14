@@ -11,13 +11,20 @@ public class DestroyTiles : MonoBehaviour{
        public bool canExplode = true;
        //public GameObject boomFX;
 
+	   public Transform digPointUp; 
+	   public Transform digPointDown; 
+
        void Start(){
               TileMapInit();
        }
 
        void Update(){
-              if ((Input.GetKeyDown("space")) && (canExplode == true)){
-                     destroyTileArea();
+		if (canExplode == true)
+              if (Input.GetKeyDown("e")){
+                     destroyTileAreaUp();
+              }
+			  if (Input.GetKeyDown("r")){
+                     destroyTileAreaDown();
               }
        }
 
@@ -34,9 +41,23 @@ public class DestroyTiles : MonoBehaviour{
               }
        }
 
-       void destroyTileArea(){
+       void destroyTileAreaUp(){
              foreach (Vector3 tile in tileWorldLocations){
-                     if (Vector2.Distance(tile, transform.position) <= rangeDestroy){
+                     if (Vector2.Distance(tile, digPointUp.position) <= rangeDestroy){
+                            //Debug.Log("in range");
+                            Vector3Int localPlace = destructableTilemap.WorldToCell(tile);
+                            if (destructableTilemap.HasTile(localPlace)){
+                                   //StartCoroutine(BoomVFX(tile));
+                                   destructableTilemap.SetTile(destructableTilemap.WorldToCell(tile), null);
+                            }
+                     //tileWorldLocations.Remove(tile);
+                     }
+              }
+       }
+
+       void destroyTileAreaDown(){
+             foreach (Vector3 tile in tileWorldLocations){
+                     if (Vector2.Distance(tile, digPointDown.position) <= rangeDestroy){
                             //Debug.Log("in range");
                             Vector3Int localPlace = destructableTilemap.WorldToCell(tile);
                             if (destructableTilemap.HasTile(localPlace)){
@@ -56,7 +77,8 @@ public class DestroyTiles : MonoBehaviour{
 
        //NOTE: To help see the attack sphere in editor:
        void OnDrawGizmosSelected(){
-              Gizmos.DrawWireSphere(transform.position, rangeDestroy);
+              Gizmos.DrawWireSphere(digPointUp.position, rangeDestroy);
+			  Gizmos.DrawWireSphere(digPointDown.position, rangeDestroy);
        }
 }
 

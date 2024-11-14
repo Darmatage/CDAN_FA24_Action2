@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour {
@@ -9,10 +10,10 @@ public class GameHandler : MonoBehaviour {
       private GameObject player;
       public static int playerHealth = 100;
       public int StartPlayerHealth = 100;
-      public GameObject healthText;
+      public TMP_Text healthText;
 
       public static int gotTokens = 0;
-      public GameObject tokensText;
+      public TMP_Text tokensText;
 
       public bool isDefending = false;
 
@@ -60,11 +61,9 @@ public class GameHandler : MonoBehaviour {
       }
 
       public void updateStatsDisplay(){
-            Text healthTextTemp = healthText.GetComponent<Text>();
-            healthTextTemp.text = "HEALTH: " + playerHealth;
-
-            Text tokensTextTemp = tokensText.GetComponent<Text>();
-            tokensTextTemp.text = "GOLD: " + gotTokens;
+		Debug.Log("I am updatign stats");
+            healthText.text = "HEALTH: " + playerHealth;
+            tokensText.text = "GOLD: " + gotTokens;
       }
 
       public void playerDies(){
