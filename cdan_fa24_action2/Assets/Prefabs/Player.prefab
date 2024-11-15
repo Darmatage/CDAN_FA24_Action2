@@ -135,7 +135,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.07431546}
+  m_Offset: {x: 0.0029442906, y: 0.059593976}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0.04, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -146,7 +146,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5188612, y: 0.7013691}
+  m_Size: {x: 0.25387436, y: 0.67192614}
   m_EdgeRadius: 0
 --- !u!58 &1733393456359180836
 CircleCollider2D:
@@ -180,9 +180,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.24}
+  m_Offset: {x: 0, y: -0.1752254}
   serializedVersion: 2
-  m_Radius: 0.35
+  m_Radius: 0.28522542
 --- !u!50 &31776535722407858
 Rigidbody2D:
   serializedVersion: 4
@@ -264,8 +264,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destructableTilemap: {fileID: 0}
-  rangeDestroy: 1
+  rangeDestroyUp: 0.6
+  rangeDestroyDown: 1
   canExplode: 1
+  digParticlesFX: {fileID: 5646203415110833045, guid: 41586cde17aad8647bf58443f48af5ae, type: 3}
   digPointUp: {fileID: 455684635688178211}
   digPointDown: {fileID: 4229698262675617454}
 --- !u!1 &6545848793591147659
@@ -398,7 +400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7679401655520416870}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.623, y: 0.625, z: 0}
+  m_LocalPosition: {x: 0.623, y: 0.821, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

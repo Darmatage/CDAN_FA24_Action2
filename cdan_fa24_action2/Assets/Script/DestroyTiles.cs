@@ -7,9 +7,11 @@ public class DestroyTiles : MonoBehaviour{
 
        public Tilemap destructableTilemap;
        private List<Vector3> tileWorldLocations;
-       public float rangeDestroy = 2f;
+	   public float rangeDestroyUp = 1f;
+       public float rangeDestroyDown = 2f;
+	   
        public bool canExplode = true;
-       //public GameObject boomFX;
+    	public GameObject digParticlesFX;
 
 	   public Transform digPointUp; 
 	   public Transform digPointDown; 
@@ -43,7 +45,7 @@ public class DestroyTiles : MonoBehaviour{
 
        void destroyTileAreaUp(){
              foreach (Vector3 tile in tileWorldLocations){
-                     if (Vector2.Distance(tile, digPointUp.position) <= rangeDestroy){
+                     if (Vector2.Distance(tile, digPointUp.position) <= rangeDestroyUp){
                             //Debug.Log("in range");
                             Vector3Int localPlace = destructableTilemap.WorldToCell(tile);
                             if (destructableTilemap.HasTile(localPlace)){
@@ -57,11 +59,11 @@ public class DestroyTiles : MonoBehaviour{
 
        void destroyTileAreaDown(){
              foreach (Vector3 tile in tileWorldLocations){
-                     if (Vector2.Distance(tile, digPointDown.position) <= rangeDestroy){
+                     if (Vector2.Distance(tile, digPointDown.position) <= rangeDestroyDown){
                             //Debug.Log("in range");
                             Vector3Int localPlace = destructableTilemap.WorldToCell(tile);
                             if (destructableTilemap.HasTile(localPlace)){
-                                   //StartCoroutine(BoomVFX(tile));
+                                   StartCoroutine(DigVFX(tile));
                                    destructableTilemap.SetTile(destructableTilemap.WorldToCell(tile), null);
                             }
                      //tileWorldLocations.Remove(tile);
@@ -69,16 +71,16 @@ public class DestroyTiles : MonoBehaviour{
               }
        }
 
-       //IEnumerator BoomVFX(Vector3 tilePos){
-              //GameObject tempVFX = Instantiate(boomFX, tilePos, Quaternion.identity);
-              //yield return new WaitForSeconds(.5f);
-              //Destroy(tempVFX);
-       //}
+       IEnumerator DigVFX(Vector3 tilePos){
+              GameObject tempVFX = Instantiate(digParticlesFX, tilePos, Quaternion.identity);
+              yield return new WaitForSeconds(1f);
+              Destroy(tempVFX);
+       }
 
        //NOTE: To help see the attack sphere in editor:
        void OnDrawGizmosSelected(){
-              Gizmos.DrawWireSphere(digPointUp.position, rangeDestroy);
-			  Gizmos.DrawWireSphere(digPointDown.position, rangeDestroy);
+              Gizmos.DrawWireSphere(digPointUp.position, rangeDestroyUp);
+			  Gizmos.DrawWireSphere(digPointDown.position, rangeDestroyDown);
        }
 }
 
