@@ -20,10 +20,10 @@ public class DestroyTiles : MonoBehaviour{
 
        void Update(){
 		if (canExplode == true)
-              if (Input.GetKeyDown("e")){
+              if (Input.GetButtonDown("DigUp")){
                      destroyTileAreaUp();
               }
-			  if (Input.GetKeyDown("r")){
+			  if (Input.GetButtonDown("DigDown")){
                      destroyTileAreaDown();
               }
        }
