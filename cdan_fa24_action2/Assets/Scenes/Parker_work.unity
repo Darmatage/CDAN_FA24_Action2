@@ -531,6 +531,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 607477d5718684f0c923a9319f79cfd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  monologueBox: {fileID: 1637481555}
+  monologueText: {fileID: 0}
+  monologue: []
+  counter: 0
+  monologueLength: 0
 --- !u!4 &496984188
 Transform:
   m_ObjectHideFlags: 0
@@ -557,6 +562,7 @@ GameObject:
   - component: {fileID: 516317524}
   - component: {fileID: 516317523}
   - component: {fileID: 516317522}
+  - component: {fileID: 516317525}
   m_Layer: 0
   m_Name: NPC_chat
   m_TagString: Untagged
@@ -670,6 +676,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &516317525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516317521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdff069e9290c4b07ab6c5af8c92ae8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologue: []
+  playerInRange: 0
+  monologueLength: 0
 --- !u!1 &537944734
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,7 +877,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 926122018}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 496984187}
+        m_TargetAssemblyTypeName: NPCMonologueManager, Assembly-CSharp
+        m_MethodName: MonologueNext
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &926122018
 MonoBehaviour:
   m_ObjectHideFlags: 0
