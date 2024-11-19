@@ -5,19 +5,23 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
 
-    public Animator animator;
-    public Rigidbody2D rb2D;
-    private bool FaceRight = false; // determine which way player is facing.
+    private Animator animator;
+    private Rigidbody2D rb2D;
+    public bool FaceRight = false; // determine which way player is facing.
     public static float runSpeed = 10f;
     public float startSpeed = 10f;
     public bool isAlive = true;
     //public AudioSource WalkSFX;
     private Vector3 hMove;
 
+	public GameObject dashCloudVFX;
+
     void Start()
-    {
+    {	
         animator = gameObject.GetComponentInChildren<Animator>();
         rb2D = transform.GetComponent<Rigidbody2D>();
+		runSpeed = startSpeed;
+		dashCloudVFX.SetActive(false);
     }
 
     void Update()
@@ -46,6 +50,19 @@ public class PlayerMove : MonoBehaviour
             {
                 playerTurn();
             }
+
+			//DASHING:
+			if ((Input.GetKey("left shift"))||(Input.GetKey("right shift"))){
+				Debug.Log("I am trying to dash");
+				runSpeed = startSpeed *2;
+				GameObject.FindWithTag("GameHandler").GetComponent<DigEnergyMeter>().isDashing=true;
+				dashCloudVFX.SetActive(true);
+			}
+			if ((Input.GetKeyUp("left shift"))||(Input.GetKeyUp("right shift"))){
+				runSpeed = startSpeed;
+				GameObject.FindWithTag("GameHandler").GetComponent<DigEnergyMeter>().isDashing=false;
+				dashCloudVFX.SetActive(false);
+			}
         }
     }
 

@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5646203415110833045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.4, z: -1}
+  m_LocalPosition: {x: 0, y: 7.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -116,7 +116,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -169,7 +169,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -287,7 +287,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.4
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1046,20 +1046,29 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0.9625015
-          inSlope: -0.42618328
-          outSlope: -0.42618328
+          inSlope: 0.046483073
+          outSlope: 0.046483073
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.16217804
+          outWeight: 0.3185131
+        - serializedVersion: 3
+          time: 0.5707296
+          value: 0.7427833
+          inSlope: -0.9146115
+          outSlope: -0.9146115
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
         - serializedVersion: 3
           time: 0.97662354
           value: 0
-          inSlope: -1.7680072
-          outSlope: -1.7680072
+          inSlope: -2.6707883
+          outSlope: -2.6707883
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.1346515
+          inWeight: 0.2951872
           outWeight: 0.33333334
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -1383,8 +1392,8 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 50115
-        atime2: 65535
+        atime1: 20624
+        atime2: 53392
         atime3: 0
         atime4: 0
         atime5: 0
@@ -2304,7 +2313,7 @@ ParticleSystem:
     y:
       serializedVersion: 2
       minMaxState: 0
-      scalar: -5
+      scalar: -10
       minScalar: 0
       maxCurve:
         serializedVersion: 2

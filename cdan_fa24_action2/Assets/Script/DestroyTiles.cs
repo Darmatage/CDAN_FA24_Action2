@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class DestroyTiles : MonoBehaviour{
-
+		private GameObject gameHandlerObj;
        public Tilemap destructableTilemap;
        private List<Vector3> tileWorldLocations;
 	   public float rangeDestroyUp = 1f;
@@ -18,6 +18,7 @@ public class DestroyTiles : MonoBehaviour{
 
        void Start(){
               TileMapInit();
+			  gameHandlerObj = GameObject.FindWithTag("GameHandler");
        }
 
        void Update(){
@@ -49,7 +50,7 @@ public class DestroyTiles : MonoBehaviour{
                             //Debug.Log("in range");
                             Vector3Int localPlace = destructableTilemap.WorldToCell(tile);
                             if (destructableTilemap.HasTile(localPlace)){
-                                   //StartCoroutine(BoomVFX(tile));
+                                   StartCoroutine(DigVFX(tile));
                                    destructableTilemap.SetTile(destructableTilemap.WorldToCell(tile), null);
                             }
                      //tileWorldLocations.Remove(tile);
@@ -62,8 +63,9 @@ public class DestroyTiles : MonoBehaviour{
                      if (Vector2.Distance(tile, digPointDown.position) <= rangeDestroyDown){
                             //Debug.Log("in range");
                             Vector3Int localPlace = destructableTilemap.WorldToCell(tile);
-                            if (destructableTilemap.HasTile(localPlace)){
+                            if ((destructableTilemap.HasTile(localPlace))&& (gameHandlerObj.GetComponent<DigEnergyMeter>().canDig==true)){
                                    StartCoroutine(DigVFX(tile));
+								   gameHandlerObj.GetComponent<DigEnergyMeter>().ReduceEnergyDig();
                                    destructableTilemap.SetTile(destructableTilemap.WorldToCell(tile), null);
                             }
                      //tileWorldLocations.Remove(tile);
@@ -72,7 +74,8 @@ public class DestroyTiles : MonoBehaviour{
        }
 
        IEnumerator DigVFX(Vector3 tilePos){
-              GameObject tempVFX = Instantiate(digParticlesFX, tilePos, Quaternion.identity);
+			Vector3 tilePosPlus = new Vector3(tilePos.x, tilePos.y, tilePos.z -0.5f);
+              GameObject tempVFX = Instantiate(digParticlesFX, tilePosPlus, Quaternion.identity);
               yield return new WaitForSeconds(1f);
               Destroy(tempVFX);
        }
