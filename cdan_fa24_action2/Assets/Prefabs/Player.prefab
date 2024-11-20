@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1140488593373860176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1975476972131297280}
+  m_Layer: 6
+  m_Name: HitPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1975476972131297280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140488593373860176}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.014, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7527921456896025258}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2040167376528554828
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,6 +214,7 @@ GameObject:
   - component: {fileID: 5161599827467445987}
   - component: {fileID: 3966433329784388505}
   - component: {fileID: 15639339336409214}
+  - component: {fileID: 5203215123409615695}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -207,6 +239,7 @@ Transform:
   - {fileID: 455684635688178211}
   - {fileID: 4229698262675617454}
   - {fileID: 4414202138751429862}
+  - {fileID: 1975476972131297280}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -377,6 +410,26 @@ MonoBehaviour:
   digParticlesFX: {fileID: 5646203415110833045, guid: 41586cde17aad8647bf58443f48af5ae, type: 3}
   digPointUp: {fileID: 455684635688178211}
   digPointDown: {fileID: 4229698262675617454}
+--- !u!114 &5203215123409615695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6265757257430852507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e198a566f4035d64fa79bf69501ff055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  attackPt: {fileID: 1975476972131297280}
+  attackRange: 0.5
+  attackRate: 2
+  attackDamage: 40
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &6545848793591147659
 GameObject:
   m_ObjectHideFlags: 0
