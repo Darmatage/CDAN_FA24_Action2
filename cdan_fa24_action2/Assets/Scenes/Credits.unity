@@ -481,7 +481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 246}
+  m_AnchoredPosition: {x: 0, y: 211}
   m_SizeDelta: {x: 700, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &713833248
@@ -513,8 +513,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282342274
-  m_fontColor: {r: 0.509434, g: 0.3579595, b: 0.24750803, a: 1}
+    rgba: 4290766821
+  m_fontColor: {r: 0.8973118, g: 0.9056604, b: 0.74759704, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -632,14 +632,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7540382, g: 0.9245283, b: 0.5800107, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e9e8382c3f50f4ce28b534d648113cc2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -898,7 +898,10 @@ MonoBehaviour:
 
     Emily Leaming
 
-    Parker Cook'
+    Parker Cook
+
+    Jason
+    Wiser'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -907,8 +910,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282606212
-  m_fontColor: {r: 0.5176471, g: 0.38431376, b: 0.2627451, a: 1}
+    rgba: 4290766821
+  m_fontColor: {r: 0.8980392, g: 0.90588236, b: 0.7490196, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1204,7 +1207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4465024024634195935, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -112
+      value: -149
       objectReference: {fileID: 0}
     - target: {fileID: 4465024024634195935, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1224,7 +1227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8854916146032199008, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_Name
-      value: button_PLAY
+      value: button_MainMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
