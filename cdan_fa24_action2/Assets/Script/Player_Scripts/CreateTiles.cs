@@ -8,7 +8,7 @@ public class CreateTiles : MonoBehaviour{
        public Transform paintPoint;
 	   public Tilemap paintTilemap; //a (potentially) empty map to be painted
        public Tilemap rangeTilemap; // the entire space that can be painted
-       public Tile newTile;
+       public RuleTile newTile;
        private List<Vector3> tileWorldLocations;
        public float rangePaint = 0.5f;
        //public bool canPaint = true;

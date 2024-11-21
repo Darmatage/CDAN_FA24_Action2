@@ -458,9 +458,8 @@ MonoBehaviour:
   paintPoint: {fileID: 9181683683290967387}
   paintTilemap: {fileID: 0}
   rangeTilemap: {fileID: 0}
-  newTile: {fileID: 11400000, guid: 9e45d584f29c543fea589ccfe7b063fc, type: 2}
+  newTile: {fileID: 11400000, guid: e658f0635cb1d414a9d78d322999a26c, type: 2}
   rangePaint: 0.5
-  canPaint: 1
 --- !u!114 &5203215123409615695
 MonoBehaviour:
   m_ObjectHideFlags: 0
