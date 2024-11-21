@@ -8,6 +8,7 @@ TagManager:
   - PauseMenuSlider
   - enemyShooter
   - MonologueManager
+  - Door
   layers:
   - Default
   - TransparentFX

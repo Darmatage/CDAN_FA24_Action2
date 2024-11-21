@@ -1,12 +1,13 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 
 public class NPCMonologueManager : MonoBehaviour {
 
        public GameObject monologueBox;
-       public Text monologueText;
+       public TMP_Text monologueText;
        public string[] monologue;
        public int counter = 0;
        public int monologueLength;
