@@ -93,6 +93,37 @@ Transform:
   m_Father: {fileID: 7527921456896025258}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3941274931117795370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9181683683290967387}
+  m_Layer: 6
+  m_Name: paintPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9181683683290967387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941274931117795370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.74, y: -0.12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7527921456896025258}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4428130070760069791
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +245,7 @@ GameObject:
   - component: {fileID: 5161599827467445987}
   - component: {fileID: 3966433329784388505}
   - component: {fileID: 15639339336409214}
+  - component: {fileID: 2833388526740496544}
   - component: {fileID: 5203215123409615695}
   m_Layer: 6
   m_Name: Player
@@ -238,6 +270,7 @@ Transform:
   - {fileID: 2831482138762713331}
   - {fileID: 455684635688178211}
   - {fileID: 4229698262675617454}
+  - {fileID: 9181683683290967387}
   - {fileID: 4414202138751429862}
   - {fileID: 1975476972131297280}
   m_Father: {fileID: 0}
@@ -410,6 +443,24 @@ MonoBehaviour:
   digParticlesFX: {fileID: 5646203415110833045, guid: 41586cde17aad8647bf58443f48af5ae, type: 3}
   digPointUp: {fileID: 455684635688178211}
   digPointDown: {fileID: 4229698262675617454}
+--- !u!114 &2833388526740496544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6265757257430852507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b67a3a8d17de79249bed1f6f776b47ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paintPoint: {fileID: 9181683683290967387}
+  paintTilemap: {fileID: 0}
+  rangeTilemap: {fileID: 0}
+  newTile: {fileID: 11400000, guid: 9e45d584f29c543fea589ccfe7b063fc, type: 2}
+  rangePaint: 0.5
+  canPaint: 1
 --- !u!114 &5203215123409615695
 MonoBehaviour:
   m_ObjectHideFlags: 0

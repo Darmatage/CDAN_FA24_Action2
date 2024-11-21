@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6478612132298012627}
   - component: {fileID: 2252811030929418254}
   - component: {fileID: 4678702442827921140}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy_MoveHit_CAT
   m_TagString: Untagged
   m_Icon: {fileID: 0}

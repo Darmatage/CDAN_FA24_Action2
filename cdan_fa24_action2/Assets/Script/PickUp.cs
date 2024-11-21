@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour{
 
-      public GameHandler gameHandler;
+      private GameHandler gameHandler;
       //public playerVFX playerPowerupVFX;
       public bool isHealthPickUp = true;
       public bool isSpeedBoostPickUp = false;

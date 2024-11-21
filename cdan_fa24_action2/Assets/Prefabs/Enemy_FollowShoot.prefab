@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6719271948965265771}
   - component: {fileID: 2875816848853223603}
   - component: {fileID: 5275527757771242661}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Enemy_FollowShoot
   m_TagString: enemyShooter
   m_Icon: {fileID: 0}
