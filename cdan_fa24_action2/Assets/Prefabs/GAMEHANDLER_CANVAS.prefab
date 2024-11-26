@@ -1556,8 +1556,11 @@ MonoBehaviour:
   energyMax: 10
   digEnergyMinimum: 0.5
   digEnergy: 0.5
+  pileEnergy: 2
+  pileEnergyMinimum: 2
   energyMeterDisplay: {fileID: 6024722977192516937}
   canDig: 1
+  canPile: 1
   isDashing: 0
 --- !u!114 &5798526670128222924 stripped
 MonoBehaviour:
@@ -1825,7 +1828,7 @@ PrefabInstance:
       objectReference: {fileID: 5798526670128222924}
     - target: {fileID: 4832935790963435011, guid: 2a0bf17eaa0ad4a5696fa0444b2439cf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartGame
+      value: ReplayLastLevel
       objectReference: {fileID: 0}
     - target: {fileID: 5387560123290064032, guid: 2a0bf17eaa0ad4a5696fa0444b2439cf, type: 3}
       propertyPath: m_Name

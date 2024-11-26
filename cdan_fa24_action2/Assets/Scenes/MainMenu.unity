@@ -253,7 +253,7 @@ PrefabInstance:
       objectReference: {fileID: 787796661055855535}
     - target: {fileID: 4832935790963435011, guid: 2a0bf17eaa0ad4a5696fa0444b2439cf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartGame
+      value: ReplayLastLevel
       objectReference: {fileID: 0}
     - target: {fileID: 5387560123290064032, guid: 2a0bf17eaa0ad4a5696fa0444b2439cf, type: 3}
       propertyPath: m_Name
@@ -277,6 +277,11 @@ RectTransform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5387560123290064032, guid: 2a0bf17eaa0ad4a5696fa0444b2439cf, type: 3}
   m_PrefabInstance: {fileID: 46594122}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &282940839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8854916146032199008, guid: ee397bf2705014add8068279532cf95a, type: 3}
+  m_PrefabInstance: {fileID: 907184686}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &309014185 stripped
 RectTransform:
@@ -451,6 +456,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &890586505 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8854916146032199008, guid: ee397bf2705014add8068279532cf95a, type: 3}
+  m_PrefabInstance: {fileID: 1920376407}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &907184686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -570,13 +580,79 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8854916146032199008, guid: ee397bf2705014add8068279532cf95a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 907184691}
   m_SourcePrefab: {fileID: 100100000, guid: ee397bf2705014add8068279532cf95a, type: 3}
 --- !u!224 &907184687 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4465024024634195935, guid: ee397bf2705014add8068279532cf95a, type: 3}
   m_PrefabInstance: {fileID: 907184686}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &907184691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282940839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0883521b49ef4ea42bf908f513fb3d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curveMove:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2.9173367
+      outSlope: 2.9173367
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.14166667
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.53223866
+      outSlope: -0.53223866
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.14166665
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curveAlpha:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2.9754229
+      outSlope: 2.9754229
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.054166667
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  isButton1: 0
+  isButton2: 0
+  isButton3: 1
 --- !u!1 &963347424
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,7 +1026,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8854916146032199008, guid: ee397bf2705014add8068279532cf95a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1859051301}
   m_SourcePrefab: {fileID: 100100000, guid: ee397bf2705014add8068279532cf95a, type: 3}
 --- !u!224 &1342597453 stripped
 RectTransform:
@@ -1201,6 +1280,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790297988}
   m_CullTransparentMesh: 1
+--- !u!1 &1859051297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8854916146032199008, guid: ee397bf2705014add8068279532cf95a, type: 3}
+  m_PrefabInstance: {fileID: 1342597452}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1859051301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859051297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0883521b49ef4ea42bf908f513fb3d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curveMove:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2.9173367
+      outSlope: 2.9173367
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.14166667
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.53223866
+      outSlope: -0.53223866
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.14166665
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curveAlpha:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2.9754229
+      outSlope: 2.9754229
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.054166667
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  isButton1: 0
+  isButton2: 1
+  isButton3: 0
 --- !u!1001 &1920376407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1320,13 +1467,79 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8854916146032199008, guid: ee397bf2705014add8068279532cf95a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1920376412}
   m_SourcePrefab: {fileID: 100100000, guid: ee397bf2705014add8068279532cf95a, type: 3}
 --- !u!224 &1920376408 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4465024024634195935, guid: ee397bf2705014add8068279532cf95a, type: 3}
   m_PrefabInstance: {fileID: 1920376407}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1920376412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890586505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0883521b49ef4ea42bf908f513fb3d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curveMove:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2.9173367
+      outSlope: 2.9173367
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.14166667
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.53223866
+      outSlope: -0.53223866
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.14166665
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curveAlpha:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2.9754229
+      outSlope: 2.9754229
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.054166667
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  isButton1: 1
+  isButton2: 0
+  isButton3: 0
 --- !u!1001 &787796661055855534
 PrefabInstance:
   m_ObjectHideFlags: 0
