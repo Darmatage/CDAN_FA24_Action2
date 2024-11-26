@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6719271948965265771}
   - component: {fileID: 2875816848853223603}
   - component: {fileID: 5275527757771242661}
+  - component: {fileID: 5161960383201794446}
   m_Layer: 7
   m_Name: Enemy_FollowShoot
   m_TagString: enemyShooter
@@ -127,6 +128,22 @@ MonoBehaviour:
   EnemyLives: 30
   attackRange: 4
   isAttacking: 0
+--- !u!114 &5161960383201794446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2773501157145071583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c5443cf13ea1244eb6d2a40d0a69fd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  healthLoot: {fileID: 2806464660714692466, guid: cf3d6d440eb6b9541b50110b5650ff0a, type: 3}
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1 &8240475966046742889
 GameObject:
   m_ObjectHideFlags: 0

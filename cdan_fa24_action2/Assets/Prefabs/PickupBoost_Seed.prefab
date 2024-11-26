@@ -91,12 +91,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c0de1e106a71e64aa2c81f4166c3ad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameHandler: {fileID: 0}
-  isHealthPickUp: 1
-  isSpeedBoostPickUp: 0
+  isHealthPickUp: 0
+  isEnergyPickUp: 1
   healthBoost: 50
-  speedBoost: 2
-  speedTime: 2
+  energyBoost: 5
 --- !u!1 &8450497901310602856
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,7 +106,7 @@ GameObject:
   - component: {fileID: 7784165903812681844}
   - component: {fileID: 8461159723854957851}
   m_Layer: 0
-  m_Name: pickup_SunflowerSeed1
+  m_Name: pickup_seed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

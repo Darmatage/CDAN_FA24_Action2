@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FaceRight: 0
-  startSpeed: 2
+  startSpeed: 4
   isAlive: 1
   dashCloudVFX: {fileID: 4428130070760069791}
 --- !u!114 &3966433329784388505
@@ -424,6 +424,8 @@ MonoBehaviour:
   canJump: 1
   jumpTimes: 0
   isAlive: 1
+  isGroundedCheck: 0
+  isUnderground: 1
 --- !u!114 &15639339336409214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,6 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3d155d00e9154b3bb009f51701b87d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 4106064161437190524}
   destructableTilemap: {fileID: 0}
   rangeDestroyUp: 0.6
   rangeDestroyDown: 1
@@ -455,6 +458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67a3a8d17de79249bed1f6f776b47ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 4106064161437190524}
   paintPoint: {fileID: 9181683683290967387}
   paintTilemap: {fileID: 0}
   rangeTilemap: {fileID: 0}
@@ -472,11 +476,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e198a566f4035d64fa79bf69501ff055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 4106064161437190524}
   attackPt: {fileID: 1975476972131297280}
   attackRange: 0.5
   attackRate: 2
-  attackDamage: 40
+  attackDamage: 30
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128

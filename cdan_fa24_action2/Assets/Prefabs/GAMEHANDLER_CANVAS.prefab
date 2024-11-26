@@ -1530,6 +1530,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2577978387163124400, guid: c9d049b6358af409187c109937de1e7b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4204279885725711910}
+    - targetCorrespondingSourceObject: {fileID: 2577978387163124400, guid: c9d049b6358af409187c109937de1e7b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2840619210052968243}
   m_SourcePrefab: {fileID: 100100000, guid: c9d049b6358af409187c109937de1e7b, type: 3}
 --- !u!4 &127906115279773734 stripped
 Transform:
@@ -1562,6 +1565,19 @@ MonoBehaviour:
   canDig: 1
   canPile: 1
   isDashing: 0
+--- !u!114 &2840619210052968243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4935825529414026353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa69bdc89def8e641b38d8fe65d3823a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swordLife: 5
 --- !u!114 &5798526670128222924 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4017707628211078157, guid: c9d049b6358af409187c109937de1e7b, type: 3}
