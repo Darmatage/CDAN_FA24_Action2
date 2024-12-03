@@ -9,6 +9,7 @@ TagManager:
   - enemyShooter
   - MonologueManager
   - Door
+  - Family
   layers:
   - Default
   - TransparentFX
