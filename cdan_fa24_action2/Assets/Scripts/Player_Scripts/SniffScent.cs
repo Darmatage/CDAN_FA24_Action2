@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class SniffScent : MonoBehaviour{
 
-	private SnifferPlayer sniffPlayer;
-	private float timeToExist = 3f;
+	private float timeToExist = 3.0f;
+	public float moveSpeed = 1f;
 	public Vector3 destination;
+	public int familyNumber;
 
 	//fade away variables:
 	bool fadeaway = false;
@@ -15,7 +16,6 @@ public class SniffScent : MonoBehaviour{
 	float spriteOpacity;
 
 	void Start(){
-		sniffPlayer = GameObject.FindWithTag("Player").GetComponent<SnifferPlayer>();
 		spriteRend = GetComponentInChildren<SpriteRenderer>();
 		spriteColor = spriteRend.color;
 		spriteOpacity = spriteColor.a;
@@ -25,7 +25,7 @@ public class SniffScent : MonoBehaviour{
 	//Head toward player a bit
     void FixedUpdate(){
 		//head slowly toward previous player position, destination
-		transform.position = Vector3.MoveTowards(transform.position, destination, 1f * Time.fixedDeltaTime);
+		transform.position = Vector3.MoveTowards(transform.position, destination, moveSpeed * Time.fixedDeltaTime);
 
 		//fade-away:
 		if (fadeaway){
@@ -37,7 +37,7 @@ public class SniffScent : MonoBehaviour{
 	//wait for player to run into it, and display thought bubble with family member image in mask?
 	public void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "Player"){
-			sniffPlayer.ShowThoughts();
+			other.gameObject.GetComponent<SnifferPlayer>().ShowThoughts(familyNumber);
 		}
 	}
 
@@ -47,4 +47,14 @@ public class SniffScent : MonoBehaviour{
 		yield return new WaitForSeconds (0.65f);
 		Destroy(gameObject);
 	}
+
+	public void SetFamilyNumber(int familyNum){
+		familyNumber = familyNum;
+		if (familyNum > 0){
+			spriteColor.r = 2.0f + Random.Range(0, 0.5f);
+			spriteColor.g = 2.0f + Random.Range(0, 0.5f);
+			spriteColor.b = 2.0f + Random.Range(0, 0.5f);
+		}
+	}
+
 }
