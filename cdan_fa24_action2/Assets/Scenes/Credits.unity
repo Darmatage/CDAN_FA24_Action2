@@ -1122,6 +1122,38 @@ PrefabInstance:
     m_TransformParent: {fileID: 974811742}
     m_Modifications:
     - target: {fileID: 2588168695259408076, guid: ee397bf2705014add8068279532cf95a, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588168695259408076, guid: ee397bf2705014add8068279532cf95a, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588168695259408076, guid: ee397bf2705014add8068279532cf95a, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588168695259408076, guid: ee397bf2705014add8068279532cf95a, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.3372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588168695259408076, guid: ee397bf2705014add8068279532cf95a, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.50980395
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588168695259408076, guid: ee397bf2705014add8068279532cf95a, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.6039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588168695259408076, guid: ee397bf2705014add8068279532cf95a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.9098039
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588168695259408076, guid: ee397bf2705014add8068279532cf95a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588168695259408076, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 787796661055855535}
@@ -1225,6 +1257,14 @@ PrefabInstance:
       propertyPath: m_text
       value: MAIN MENU
       objectReference: {fileID: 0}
+    - target: {fileID: 7362234425817828330, guid: ee397bf2705014add8068279532cf95a, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7362234425817828330, guid: ee397bf2705014add8068279532cf95a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e09888d344a8348898aa683aac10d471, type: 3}
     - target: {fileID: 8854916146032199008, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_Name
       value: button_MainMenu
