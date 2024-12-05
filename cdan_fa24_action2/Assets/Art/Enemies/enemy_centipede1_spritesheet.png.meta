@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: centipede spritesheet_0
+      name: enemy_centipede1_spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf88f36f4ef1ea74c84ac9a265c36c0b
-      internalID: 24657441
+      spriteID: 3c228270f9f55414ab53ecb78b86fbb9
+      internalID: -1245842942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: centipede spritesheet_1
+      name: enemy_centipede1_spritesheet_1
       rect:
         serializedVersion: 2
         x: 128
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9720fc3fd2312e41b4800ec541eeccd
-      internalID: -133349300
+      spriteID: f47e92595a9c1404d9b4ec8e93687557
+      internalID: 1398611310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: centipede spritesheet_2
+      name: enemy_centipede1_spritesheet_2
       rect:
         serializedVersion: 2
         x: 256
@@ -179,14 +179,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c598b87c34689f94b8d42dd0b4334eb3
-      internalID: 1689786179
+      spriteID: 9a8faac12cb3f8f499c40987f7ab06c2
+      internalID: -1425880267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: centipede spritesheet_3
+      name: enemy_centipede1_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d715328f4852b4b46b13c1055e06870b
+      internalID: 1667310374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_centipede1_spritesheet_4
       rect:
         serializedVersion: 2
         x: 0
@@ -200,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18d9ea3e6e2bb5644a26e822e1cf883e
-      internalID: -1406034991
+      spriteID: 101c98abc5cd6774b99273da4542b934
+      internalID: 684396186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: centipede spritesheet_4
+      name: enemy_centipede1_spritesheet_5
       rect:
         serializedVersion: 2
         x: 128
@@ -221,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95a07c6270747cb49aecaa1fa38326e4
-      internalID: 2078751149
+      spriteID: fb4f116c0f074264b9a2113e7576eca6
+      internalID: 1699770779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: centipede spritesheet_5
+      name: enemy_centipede1_spritesheet_6
       rect:
         serializedVersion: 2
         x: 256
@@ -242,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efac37153fbbe6f4592df1517919ec7d
-      internalID: -1267158621
+      spriteID: 16b5eb4d55fd0594b80e10d5ea90ade7
+      internalID: -932122343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: centipede spritesheet_6
+      name: enemy_centipede1_spritesheet_7
       rect:
         serializedVersion: 2
         x: 384
@@ -263,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1f4010fa48ece7479ed507d3efac1d2
-      internalID: 1199817353
+      spriteID: c767d47cd33c87145983e3f892f8b17a
+      internalID: -1268876383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: centipede spritesheet_7
+      name: enemy_centipede1_spritesheet_8
       rect:
         serializedVersion: 2
         x: 0
@@ -284,14 +305,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4f52289694e2be4d9ad2c6a41208ff7
-      internalID: 1610215938
+      spriteID: 916e933b51e770e4dac0bfb71856908c
+      internalID: -2136980712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: centipede spritesheet_8
+      name: enemy_centipede1_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90b91daf08d98c48823aecd06a6d592
+      internalID: 2068970398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_centipede1_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff74a5224eb60c843a0bb176541d58f2
+      internalID: 258967725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_centipede1_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7350f2bada476479f1f657dd77f5a0
+      internalID: -1740866126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_centipede1_spritesheet_12
       rect:
         serializedVersion: 2
         x: 0
@@ -305,14 +389,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33128c20bf0ee874b9715754565bd00c
-      internalID: 595271902
+      spriteID: 69cb80fa9ada4b1459ea58b6ea3654e0
+      internalID: 1018912744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: centipede spritesheet_9
+      name: enemy_centipede1_spritesheet_13
       rect:
         serializedVersion: 2
         x: 128
@@ -326,14 +410,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 188761fa271a210488c099def7c986ea
-      internalID: -495801408
+      spriteID: f171191f073a0fe4e8dd372e0df789cb
+      internalID: 661976613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: centipede spritesheet_10
+      name: enemy_centipede1_spritesheet_14
       rect:
         serializedVersion: 2
         x: 256
@@ -347,14 +431,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37b5adf1111fe4843937473f9bd0a24f
-      internalID: -1234300352
+      spriteID: 6eefacca1fcb81248a9975509d505781
+      internalID: 1459185894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: centipede spritesheet_11
+      name: enemy_centipede1_spritesheet_15
       rect:
         serializedVersion: 2
         x: 384
@@ -368,8 +452,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69a98bbf30e1f584d928bc8cb42bde26
-      internalID: 403919071
+      spriteID: 726656a5079c29a40a095320af186d03
+      internalID: 1526085273
       vertices: []
       indices: 
       edges: []
@@ -385,18 +469,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      centipede spritesheet_0: 24657441
-      centipede spritesheet_1: -133349300
-      centipede spritesheet_10: -1234300352
-      centipede spritesheet_11: 403919071
-      centipede spritesheet_2: 1689786179
-      centipede spritesheet_3: -1406034991
-      centipede spritesheet_4: 2078751149
-      centipede spritesheet_5: -1267158621
-      centipede spritesheet_6: 1199817353
-      centipede spritesheet_7: 1610215938
-      centipede spritesheet_8: 595271902
-      centipede spritesheet_9: -495801408
+      enemy_centipede1_spritesheet_0: -1245842942
+      enemy_centipede1_spritesheet_1: 1398611310
+      enemy_centipede1_spritesheet_10: 258967725
+      enemy_centipede1_spritesheet_11: -1740866126
+      enemy_centipede1_spritesheet_12: 1018912744
+      enemy_centipede1_spritesheet_13: 661976613
+      enemy_centipede1_spritesheet_14: 1459185894
+      enemy_centipede1_spritesheet_15: 1526085273
+      enemy_centipede1_spritesheet_2: -1425880267
+      enemy_centipede1_spritesheet_3: 1667310374
+      enemy_centipede1_spritesheet_4: 684396186
+      enemy_centipede1_spritesheet_5: 1699770779
+      enemy_centipede1_spritesheet_6: -932122343
+      enemy_centipede1_spritesheet_7: -1268876383
+      enemy_centipede1_spritesheet_8: -2136980712
+      enemy_centipede1_spritesheet_9: 2068970398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

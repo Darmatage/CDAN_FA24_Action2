@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7605fabace759e4a9325cf9b4e4d256, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 8
   speed: 10
   hitEffectAnim: {fileID: 8222819485327453206, guid: 0381d6a3f74716c47a25c0072af022d6, type: 3}
   SelfDestructTime: 2
@@ -4978,7 +4978,7 @@ Transform:
   m_GameObject: {fileID: 8537465769513018586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8151516291173280085}
@@ -5025,7 +5025,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 85
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e39a6cf50f487c643ae7938b1cbf225e, type: 3}
   m_Color: {r: 0.10800992, g: 0.6981132, b: 0.17997366, a: 1}
   m_FlipX: 0
   m_FlipY: 0

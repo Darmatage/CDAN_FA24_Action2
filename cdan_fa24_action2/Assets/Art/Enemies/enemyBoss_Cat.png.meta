@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: char_cat_0
+      name: enemyBoss_Cat_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2beee9cdfb22a744b8b1c714e732d6d
-      internalID: -339564449
+      spriteID: c9886e927fa10d046b47bfd850d3361a
+      internalID: -2051994672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_cat_1
+      name: enemyBoss_Cat_1
       rect:
         serializedVersion: 2
         x: 512
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba9ead5cea19f944882b0084e0cbb57c
-      internalID: 1379913551
+      spriteID: ace7087568222fa48b19c08d70933a9c
+      internalID: 1480311771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_cat_2
+      name: enemyBoss_Cat_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cfef6e5babea7348877c6d9ad74642b
-      internalID: -1042283724
+      spriteID: 279dc156557caae4c93be506d35567fa
+      internalID: 1344781182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_cat_3
+      name: enemyBoss_Cat_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 076af6b4f0f6a5f4f9e12c9cfd38fa40
-      internalID: -1311672477
+      spriteID: 0cb4bce30cf944948b0d19556f02452c
+      internalID: -299062098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_cat_4
+      name: enemyBoss_Cat_4
       rect:
         serializedVersion: 2
         x: 0
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31c0792d8868db84e9ab7d694c2412e5
-      internalID: 995320141
+      spriteID: 6a26216ace407c64380a31d424c43786
+      internalID: 1586192007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_cat_5
+      name: enemyBoss_Cat_5
       rect:
         serializedVersion: 2
         x: 512
@@ -242,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dea7252b0404da74b969ca41e2bc23f8
-      internalID: 2027526776
+      spriteID: d4dcb11d9b220754db0e422093220f8f
+      internalID: -336284688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_cat_6
+      name: enemyBoss_Cat_6
       rect:
         serializedVersion: 2
         x: 1024
@@ -263,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0d8fda496a6fa544b5e4ee614144a84
-      internalID: -825268187
+      spriteID: bba445505fc24684bb868158104d0ecd
+      internalID: -478323100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_cat_7
+      name: enemyBoss_Cat_7
       rect:
         serializedVersion: 2
         x: 1536
@@ -284,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37b9e58544e08c24a9a9d2109e06840a
-      internalID: 855077216
+      spriteID: 0a90decc7f9c5654ba99c86d0b69e76d
+      internalID: 18814832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_cat_8
+      name: enemyBoss_Cat_8
       rect:
         serializedVersion: 2
         x: 0
@@ -305,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f3edba1c001720429b052d6ed1f018a
-      internalID: 1480072439
+      spriteID: cf1891bc4348adb45aa68a19c03ec2bb
+      internalID: 379504789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_cat_9
+      name: enemyBoss_Cat_9
       rect:
         serializedVersion: 2
         x: 512
@@ -326,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 361f9a259f4e7934dba8720e0a3807c0
-      internalID: 756739391
+      spriteID: 438d36e3e5aeedc4492cda53fa2505ce
+      internalID: 1210744641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_cat_10
+      name: enemyBoss_Cat_10
       rect:
         serializedVersion: 2
         x: 1024
@@ -347,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4529975c817546e43bb1bcddea6cbacc
-      internalID: -859240259
+      spriteID: 6f74de3b806893b45b5a3b68e601b6e1
+      internalID: 899393825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_cat_11
+      name: enemyBoss_Cat_11
       rect:
         serializedVersion: 2
         x: 1536
@@ -368,8 +368,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12a7428ecc1780945be8cc83b48ff221
-      internalID: 1269392947
+      spriteID: d3c5d5fc8e0ee504b8a21efc89e3a0d3
+      internalID: 1138829222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemyBoss_Cat_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c0216bc34c435489dc1a9388061557
+      internalID: 1132929511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemyBoss_Cat_13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c4fde68abecb9498055a6f2ec79a6f
+      internalID: 1768177753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemyBoss_Cat_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab49f74d82cb04498ae26d79393ca22
+      internalID: -809522770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemyBoss_Cat_15
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59bf535a785c4ff46b19fa79e8a189c3
+      internalID: -1491878266
       vertices: []
       indices: 
       edges: []
@@ -385,18 +469,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      char_cat_0: -339564449
-      char_cat_1: 1379913551
-      char_cat_10: -859240259
-      char_cat_11: 1269392947
-      char_cat_2: -1042283724
-      char_cat_3: -1311672477
-      char_cat_4: 995320141
-      char_cat_5: 2027526776
-      char_cat_6: -825268187
-      char_cat_7: 855077216
-      char_cat_8: 1480072439
-      char_cat_9: 756739391
+      enemyBoss_Cat_0: -2051994672
+      enemyBoss_Cat_1: 1480311771
+      enemyBoss_Cat_10: 899393825
+      enemyBoss_Cat_11: 1138829222
+      enemyBoss_Cat_12: 1132929511
+      enemyBoss_Cat_13: 1768177753
+      enemyBoss_Cat_14: -809522770
+      enemyBoss_Cat_15: -1491878266
+      enemyBoss_Cat_2: 1344781182
+      enemyBoss_Cat_3: -299062098
+      enemyBoss_Cat_4: 1586192007
+      enemyBoss_Cat_5: -336284688
+      enemyBoss_Cat_6: -478323100
+      enemyBoss_Cat_7: 18814832
+      enemyBoss_Cat_8: 379504789
+      enemyBoss_Cat_9: 1210744641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

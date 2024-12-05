@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class PlayerJump : MonoBehaviour
-{
+public class PlayerJump : MonoBehaviour{
 
-    public Animator anim;
+    private Animator anim;
     public Rigidbody2D rb;
     public float jumpForce = 20f;
     public Transform feet;
@@ -19,11 +19,16 @@ public class PlayerJump : MonoBehaviour
 	public bool isGroundedCheck = false;
 
 	public bool isUnderground = true;
+	private float depthY;
+	private bool beenGrounded = false;
 
     void Start()
     {
         anim = gameObject.GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
+		if (SceneManager.GetActiveScene().name == "Level1"){
+			isUnderground = false;
+		}
     }
 
     void Update()
@@ -56,6 +61,14 @@ public class PlayerJump : MonoBehaviour
 		//to decide between climbing and jumping
 		if (isUnderground){anim.SetBool("isUnderground", true);}
 		else {anim.SetBool("isUnderground", false);}
+
+		if (Input.GetAxis("Horizontal") == 0){
+			anim.SetBool("isUpOnly", true);
+		}
+		else {
+			anim.SetBool("isUpOnly", false);
+		}
+
 		anim.SetTrigger("Jump");
         // JumpSFX.Play();
 
@@ -72,6 +85,15 @@ public class PlayerJump : MonoBehaviour
             //Debug.Log("I am trouching ground!");
             jumpTimes = 0;
 			isGroundedCheck = true;
+
+			if (!beenGrounded){
+				beenGrounded=true;
+				depthY=transform.position.y;
+			}
+			if (transform.position.y < (depthY-1)){
+				isUnderground = true;
+			}
+
             return true;
         }
 		isGroundedCheck = false;

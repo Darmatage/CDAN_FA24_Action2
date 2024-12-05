@@ -52,11 +52,13 @@ public class PlayerMove : MonoBehaviour{
 				Debug.Log("I am trying to dash");
 				runSpeed = startSpeed *2;
 				GameObject.FindWithTag("GameHandler").GetComponent<DigEnergyMeter>().isDashing=true;
+				GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().isDefending=true;
 				dashCloudVFX.SetActive(true);
 			}
 			if ((Input.GetKeyUp("left shift"))||(Input.GetKeyUp("right shift"))){
 				runSpeed = startSpeed;
 				GameObject.FindWithTag("GameHandler").GetComponent<DigEnergyMeter>().isDashing=false;
+				GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().isDefending=false;
 				dashCloudVFX.SetActive(false);
 			}
         }

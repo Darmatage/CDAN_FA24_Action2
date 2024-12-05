@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ant spritesheet_0
+      name: enemy_ant_spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab513de44bde06341ab94a6ed9234ab4
-      internalID: 108376574
+      spriteID: 9499cdeded470f241b32c3cd3fa429d3
+      internalID: -1723681867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ant spritesheet_1
+      name: enemy_ant_spritesheet_1
       rect:
         serializedVersion: 2
         x: 128
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ae2e62e8d3b534428e6ac4b13da2633
-      internalID: 1648921143
+      spriteID: b91595f214faa714b934b504d7d4d3ad
+      internalID: 807278212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ant spritesheet_2
+      name: enemy_ant_spritesheet_2
       rect:
         serializedVersion: 2
         x: 256
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e98e819b64d79cb4aa2ab2757f7711ce
-      internalID: -2120482795
+      spriteID: 3b92d0d7640c46e48ac9a120ccc68ee2
+      internalID: -520657283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ant spritesheet_3
+      name: enemy_ant_spritesheet_3
       rect:
         serializedVersion: 2
         x: 384
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 617b994d489a4b34c8ca79ebe079dde2
-      internalID: 1459130568
+      spriteID: 1a77285c7c4da8c4f9ccc69d6f2c8986
+      internalID: -228826449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ant spritesheet_4
+      name: enemy_ant_spritesheet_4
       rect:
         serializedVersion: 2
         x: 0
@@ -221,14 +221,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8e9e57cd93d77648bb255c1e2faa166
-      internalID: -1015597921
+      spriteID: 3afefce3a1cc92a418d2dd48403449c2
+      internalID: -317868580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ant spritesheet_5
+      name: enemy_ant_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a4a25002d241940a32332a43e2f7bc
+      internalID: -774368856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_ant_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1038a8a05247a9448aba8f08e6f6350f
+      internalID: -795377714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_ant_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7fbae2b9477e7448229d44552bbd59
+      internalID: -1099565326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_ant_spritesheet_8
       rect:
         serializedVersion: 2
         x: 0
@@ -242,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a88ed927e716f584aaa6a6b2991f6f64
-      internalID: 1962252343
+      spriteID: 3ab8bd7438466e54189fb4d11a93f3cb
+      internalID: 1281578320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ant spritesheet_6
+      name: enemy_ant_spritesheet_9
       rect:
         serializedVersion: 2
         x: 128
@@ -263,8 +326,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce169e44edd09ce42a3bef931fce31ce
-      internalID: 138907081
+      spriteID: 76b8d487686d8ce43b8c563d7e7f34c0
+      internalID: 200511685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_ant_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41a40a5f40361246aef9d68325c6f5d
+      internalID: 1249307275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_ant_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603e3cf197ad9a0469e6418f268dfa28
+      internalID: 1821221851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_ant_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c26a0fc91aeb948a7f7ac1a0a3601b
+      internalID: -869744623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_ant_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01a8cb70ee09bb4799657a93a858b73
+      internalID: -1929640185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_ant_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27a2a578fefd154aaa405b4d596c083
+      internalID: 470971436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_ant_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae53d101fddc624d940604670f01586
+      internalID: -1388249423
       vertices: []
       indices: 
       edges: []
@@ -280,13 +469,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ant spritesheet_0: 108376574
-      ant spritesheet_1: 1648921143
-      ant spritesheet_2: -2120482795
-      ant spritesheet_3: 1459130568
-      ant spritesheet_4: -1015597921
-      ant spritesheet_5: 1962252343
-      ant spritesheet_6: 138907081
+      enemy_ant_spritesheet_0: -1723681867
+      enemy_ant_spritesheet_1: 807278212
+      enemy_ant_spritesheet_10: 1249307275
+      enemy_ant_spritesheet_11: 1821221851
+      enemy_ant_spritesheet_12: -869744623
+      enemy_ant_spritesheet_13: -1929640185
+      enemy_ant_spritesheet_14: 470971436
+      enemy_ant_spritesheet_15: -1388249423
+      enemy_ant_spritesheet_2: -520657283
+      enemy_ant_spritesheet_3: -228826449
+      enemy_ant_spritesheet_4: -317868580
+      enemy_ant_spritesheet_5: -774368856
+      enemy_ant_spritesheet_6: -795377714
+      enemy_ant_spritesheet_7: -1099565326
+      enemy_ant_spritesheet_8: 1281578320
+      enemy_ant_spritesheet_9: 200511685
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

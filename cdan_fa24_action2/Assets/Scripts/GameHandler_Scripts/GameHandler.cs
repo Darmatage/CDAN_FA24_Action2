@@ -37,81 +37,82 @@ public class GameHandler : MonoBehaviour {
             updateStatsDisplay();
       }
 
-      public void playerGetHit(int damage){
-           if (isDefending == false){
-                  playerHealth -= damage;
-                  if (playerHealth >=0){
-                        updateStatsDisplay();
-                  }
-                  if (damage > 0){
-                        //player.GetComponent<PlayerHurt>().playerHit();       //play GetHit animation
-                  }
-            }
+	public void playerGetHit(int damage){
+		if (isDefending == false){
+			playerHealth -= damage;
+			if (playerHealth >=0){
+				updateStatsDisplay();
+			}
+			if (damage > 0){
+				//play GetHit animation
+				player.GetComponent<PlayerHurt>().playerHit();       
+			}
+		}
 
-           if (playerHealth > StartPlayerHealth){
-                  playerHealth = StartPlayerHealth;
-                  updateStatsDisplay();
-            }
+		if (playerHealth > StartPlayerHealth){
+			playerHealth = StartPlayerHealth;
+			updateStatsDisplay();
+		}
 
-           if (playerHealth <= 0){
-                  playerHealth = 0;
-                  updateStatsDisplay();
-                  playerDies();
-            }
+		if (playerHealth <= 0){
+			playerHealth = 0;
+			updateStatsDisplay();
+			playerDies();
+		}
       }
 
-      public void updateStatsDisplay(){
+	public void updateStatsDisplay(){
 		Debug.Log("I am updating stats");
-            healthText.text = "HEALTH: " + playerHealth;
-            tokensText.text = "GOLD: " + gotTokens;
-      }
+		healthText.text = "HEALTH: " + playerHealth;
+		tokensText.text = "GOLD: " + gotTokens;
+	}
 
-      public void playerDies(){
-            //player.GetComponent<PlayerHurt>().playerDead();       //play Death animation
-            lastLevelDied = sceneName;       //allows replaying the Level where you died
-            StartCoroutine(DeathPause());
-      }
+	public void playerDies(){
+		//player.GetComponent<PlayerHurt>().playerDead();       //play Death animation
+		lastLevelDied = sceneName;       //allows replaying the Level where you died
+		StartCoroutine(DeathPause());
+	}
 
-      IEnumerator DeathPause(){
-            //player.GetComponent<PlayerMove>().isAlive = false;
-            //player.GetComponent<PlayerJump>().isAlive = false;
-            yield return new WaitForSeconds(1.0f);
-            SceneManager.LoadScene("EndLose");
-      }
+	IEnumerator DeathPause(){
+		//player.GetComponent<PlayerMove>().isAlive = false;
+		//player.GetComponent<PlayerJump>().isAlive = false;
+		yield return new WaitForSeconds(1.0f);
+		SceneManager.LoadScene("EndLose");
+	}
 
-      public void StartGame() {
-            //SceneManager.LoadScene("Level1");
-			SceneManager.LoadScene("LevelComic");
-      }
+	public void StartGame() {
+		//SceneManager.LoadScene("Level1");
+		SceneManager.LoadScene("LevelComic");
+	}
 
-      // Return to MainMenu
-      public void RestartGame() {
-            Time.timeScale = 1f;
-            GameHandler_PauseMenu.GameisPaused = false;
-            SceneManager.LoadScene("MainMenu");
-             // Reset all static variables here, for new games:
-            playerHealth = StartPlayerHealth;
-      }
+	// Return to MainMenu
+	public void RestartGame() {
+		Time.timeScale = 1f;
+		GameHandler_PauseMenu.GameisPaused = false;
+		SceneManager.LoadScene("MainMenu");
+		// Reset all static variables here, for new games:
+		playerHealth = StartPlayerHealth;
+	}
 
-      // Replay the Level where you died
-      public void ReplayLastLevel() {
-            Time.timeScale = 1f;
-            GameHandler_PauseMenu.GameisPaused = false;
-            SceneManager.LoadScene(lastLevelDied);
-             // Reset all static variables here, for new games:
-            playerHealth = StartPlayerHealth;
-      }
+	// Replay the Level where you died
+	public void ReplayLastLevel() {
+		Time.timeScale = 1f;
+		GameHandler_PauseMenu.GameisPaused = false;
+		SceneManager.LoadScene(lastLevelDied);
+		// Reset all static variables here, for new games:
+		playerHealth = StartPlayerHealth;
+	}
 
-      public void QuitGame() {
-                #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-                #else
-                Application.Quit();
-                #endif
-      }
+	public void QuitGame() {
+		#if UNITY_EDITOR
+		UnityEditor.EditorApplication.isPlaying = false;
+		#else
+		Application.Quit();
+		#endif
+	}
 
-      public void Credits() {
-            SceneManager.LoadScene("Credits");
-      }
+	public void Credits() {
+		SceneManager.LoadScene("Credits");
+	}
 
 }
