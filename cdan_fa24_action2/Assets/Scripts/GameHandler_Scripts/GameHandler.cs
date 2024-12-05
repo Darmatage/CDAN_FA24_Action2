@@ -95,7 +95,7 @@ public class GameHandler : MonoBehaviour {
 	}
 
 	// Replay the Level where you died
-	public void ReplayLastLevel() {
+	public void RestartLevel() {
 		Time.timeScale = 1f;
 		GameHandler_PauseMenu.GameisPaused = false;
 		SceneManager.LoadScene(lastLevelDied);
