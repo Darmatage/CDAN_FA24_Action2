@@ -275,7 +275,7 @@ MonoBehaviour:
   monologue:
   - You found me!
   - I have been so scared
-  - o you know where momma went?
+  - Do you know where momma went?
   - Something dragged her away!
   playerInRange: 0
   monologueLength: 0

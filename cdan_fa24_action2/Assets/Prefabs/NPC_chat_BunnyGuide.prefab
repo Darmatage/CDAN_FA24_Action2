@@ -116,7 +116,7 @@ Transform:
   m_Children:
   - {fileID: 6222974364637113517}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &3363010271461037195
 BoxCollider2D:
@@ -183,3 +183,5 @@ MonoBehaviour:
   - Scalliwag
   playerInRange: 0
   monologueLength: 0
+  digLeave: 0
+  isBunny: 0

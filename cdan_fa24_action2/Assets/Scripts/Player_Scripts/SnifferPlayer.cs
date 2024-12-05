@@ -1,23 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SnifferPlayer : MonoBehaviour{
 	private GameObject[] familyMember;
+	//public List<bool> familyIsMissing = new List<bool>();
 	public GameObject scentPrefab;
 	public GameObject thoughtBubble, bubble1, bubble2, bubble3;
 	public SpriteRenderer thoughtSprite;
+	public bool canSniff = true;
 
 	//auto scent:
 	public bool scentTimerOn = true;
 	float theTimer = 0f;
 	public float timeToNextScent = 5f;
 
+	void Awake(){
+		//initialize NPC array:
+		FindFamily();
+	}
+
 	void Start() {
-		familyMember = GameObject.FindGameObjectsWithTag("Family");
-		//thoughtBubble.SetActive(true);
-		//thoughtSprite.sprite= familyMember.GetComponentInChildren<SpriteRenderer>().sprite;
-		//Debug.Log("The Sprite: " + thoughtSprite.sprite);
+		//LEVEL 1: turn off sniffer until encounter bunny:
+		if (SceneManager.GetActiveScene().name == "Level1"){
+			canSniff = false;
+		}
+		//hide thought bubbles:
 		thoughtBubble.SetActive(false);
 		bubble1.SetActive(false);
 		bubble2.SetActive(false);
@@ -44,9 +53,21 @@ public class SnifferPlayer : MonoBehaviour{
 		}
 	}
 
+//Build the NPC array (called at start and by the leaving of a family member in NPCMonologue):
+	public void FindFamily(){
+		familyMember = GameObject.FindGameObjectsWithTag("Family");
+		if (familyMember != null){
+			canSniff = true;
+		} else {
+			canSniff = false;
+		}
+	}
+
 //Spawn the scent animation:
 	public void SniffTime(){
-		StartCoroutine(SniffSpawn());
+		if (canSniff){
+			StartCoroutine(SniffSpawn());
+		}
 	}
 
 	IEnumerator SniffSpawn(){
