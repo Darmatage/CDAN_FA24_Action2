@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlayerHurt: MonoBehaviour{
 
-      public Animator anim;
-      public Rigidbody2D rb2D;
+      private Animator anim;
+      private Rigidbody2D rb2D;
 	  private SpriteRenderer rend;
 	  private Color rendColor;
+	  public float timeToShowHurt = 0.5f;
 
       void Start(){
            anim = gameObject.GetComponentInChildren<Animator>();
@@ -28,7 +29,7 @@ public class PlayerHurt: MonoBehaviour{
 	}
 
 	IEnumerator ResetColor(){
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(timeToShowHurt);
 		rend.material.color = rendColor;
 	}
 
