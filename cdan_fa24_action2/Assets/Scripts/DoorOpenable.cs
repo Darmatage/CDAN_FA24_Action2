@@ -8,15 +8,15 @@ public class DoorOpenable : MonoBehaviour{
 	public string NextLevel = "Level2";
 	public GameObject doorClosed;
 	public GameObject doorOpen;
-	
-	void Start(){
+
+    void Start(){
 		doorOpen.SetActive(false);
 		doorClosed.SetActive(true);
 	}
 
 	public void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "Player"){
-			SceneManager.LoadScene (NextLevel);
+            SceneManager.LoadScene (NextLevel);
 		}
 	}
 
