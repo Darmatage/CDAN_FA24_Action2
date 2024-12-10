@@ -35,6 +35,7 @@ public class GameHandler : MonoBehaviour {
       void Start(){
             player = GameObject.FindWithTag("Player");
             sceneName = SceneManager.GetActiveScene().name;
+			lastLevelDied = sceneName;
             //if (sceneName=="MainMenu"){ //uncomment these two lines when the MainMenu exists
                   playerHealth = StartPlayerHealth;
             //}
@@ -123,7 +124,7 @@ public class GameHandler : MonoBehaviour {
 
       public void playerDies(){
             player.GetComponent<PlayerHurt>().playerDead();      //play Death animation
-            lastLevelDied = sceneName;       //allows replaying the Level where you died
+            //lastLevelDied = sceneName;       //allows replaying the Level where you died
             StartCoroutine(DeathPause());
       }
 

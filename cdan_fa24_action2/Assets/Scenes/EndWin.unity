@@ -1343,9 +1343,17 @@ PrefabInstance:
       propertyPath: m_text
       value: MAIN MENU
       objectReference: {fileID: 0}
+    - target: {fileID: 5186032283681361014, guid: ee397bf2705014add8068279532cf95a, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186032283681361014, guid: ee397bf2705014add8068279532cf95a, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 8854916146032199008, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_Name
-      value: button_PLAY
+      value: button_MAINMENU
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
