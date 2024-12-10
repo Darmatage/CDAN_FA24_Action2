@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour {
@@ -21,7 +22,7 @@ public class GameHandler : MonoBehaviour {
       //public GameObject healthText;
 
       public static int gotTokens = 0;
-      public GameObject tokensText;
+      public TMP_Text tokensText;
 
       public bool isDefending = false;
 
@@ -50,44 +51,52 @@ public class GameHandler : MonoBehaviour {
             updateStatsDisplay();
       }
 
-      public void playerGetHit(int damage){
-           if (isDefending == false){
-                  playerHealth -= damage;
-                  if (playerHealth > 0){
-                        if (playerHearts == 3){
-                              heart3fill = (float)playerHealth / StartPlayerHealth;
-                        }
-                       else if (playerHearts == 2){
-                              heart2fill = (float)playerHealth / StartPlayerHealth;
-                        }
-                       else if (playerHearts == 1){
-                              heart1fill = (float)playerHealth / StartPlayerHealth;
-                        }
-                        Debug.Log("pHealth = " + playerHealth + ". Hearts = " + playerHearts + ". h1fill = " + heart1fill + ". h2fill = " + heart2fill + ". h3fill = " + heart3fill );
-                        updateStatsDisplay();
-                  }
+	public void playerGetHit(int damage){
+		if (isDefending == false){
+			playerHealth -= damage;
+			if (damage > 0){
+				//play GetHit animation
+				StartCoroutine(DamaageImmunity());
+				player.GetComponent<PlayerHurt>().playerHit();      
+			}
+			if (playerHealth > 0){
+				if (playerHearts == 3){
+					heart3fill = (float)playerHealth / StartPlayerHealth;
+				}
+				else if (playerHearts == 2){
+					heart2fill = (float)playerHealth / StartPlayerHealth;
+				}
+				else if (playerHearts == 1){
+					heart1fill = (float)playerHealth / StartPlayerHealth;
+				}
+				Debug.Log("pHealth = " + playerHealth + ". Hearts = " + playerHearts + ". h1fill = " + heart1fill + ". h2fill = " + heart2fill + ". h3fill = " + heart3fill );
+				updateStatsDisplay();
+			}
+		}
 
-                  if (damage > 0){
-                        player.GetComponent<PlayerHurt>().playerHit();      //play GetHit animation
-                  }
-            }
+		if (playerHealth <= 0){
+			playerHealth = 0;
+			playerHearts -=1;
+			Debug.Log("Lost a heart. Player Hearts:" + playerHearts);
+			updateStatsDisplay();
+			playerHealth = StartPlayerHealth;
+		}
 
-           if (playerHealth <= 0){
-                  playerHealth = 0;
-                  playerHearts -=1;
-                  updateStatsDisplay();
-                  playerHealth = StartPlayerHealth;
-            }
-
-           if (playerHearts <= 0){
-                  playerDies();
-            }
+		if (playerHearts <= 0){
+			playerDies();
+		}
 
            //if (playerHealth > StartPlayerHealth){
            //       playerHealth = StartPlayerHealth;
            //       updateStatsDisplay();
            //}
       }
+
+	IEnumerator DamaageImmunity(){
+		isDefending = true;
+		yield return new WaitForSeconds(0.1f);
+		isDefending = false;
+	}
 
       public void updateStatsDisplay(){
             if (playerHearts == 3){
@@ -108,8 +117,8 @@ public class GameHandler : MonoBehaviour {
             //Text healthTextTemp = healthText.GetComponent<Text>();
             // healthTextTemp.text = "HEALTH: " + playerHealth;
 
-            Text tokensTextTemp = tokensText.GetComponent<Text>();
-            tokensTextTemp.text = "GOLD: " + gotTokens;
+            //Text tokensTextTemp = tokensText.GetComponent<Text>();
+            tokensText.text = "GOLD: " + gotTokens;
       }
 
       public void playerDies(){

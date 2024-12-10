@@ -506,8 +506,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: YOU LOSE :(
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 88bb0729d45578146b471fcabd8065d2, type: 2}
+  m_sharedMaterial: {fileID: -7377753843168426594, guid: 88bb0729d45578146b471fcabd8065d2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -531,8 +531,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1371,13 +1371,25 @@ PrefabInstance:
       value: GameHandler
       objectReference: {fileID: 0}
     - target: {fileID: 4017707628211078157, guid: c9d049b6358af409187c109937de1e7b, type: 3}
+      propertyPath: heart1
+      value: 
+      objectReference: {fileID: 419943402}
+    - target: {fileID: 4017707628211078157, guid: c9d049b6358af409187c109937de1e7b, type: 3}
+      propertyPath: heart2
+      value: 
+      objectReference: {fileID: 419943402}
+    - target: {fileID: 4017707628211078157, guid: c9d049b6358af409187c109937de1e7b, type: 3}
+      propertyPath: heart3
+      value: 
+      objectReference: {fileID: 419943402}
+    - target: {fileID: 4017707628211078157, guid: c9d049b6358af409187c109937de1e7b, type: 3}
       propertyPath: healthText
       value: 
       objectReference: {fileID: 1790297990}
     - target: {fileID: 4017707628211078157, guid: c9d049b6358af409187c109937de1e7b, type: 3}
       propertyPath: tokensText
       value: 
-      objectReference: {fileID: 1790297990}
+      objectReference: {fileID: 1790297988}
     - target: {fileID: 4343282800950160356, guid: c9d049b6358af409187c109937de1e7b, type: 3}
       propertyPath: pauseMenuUI
       value: 

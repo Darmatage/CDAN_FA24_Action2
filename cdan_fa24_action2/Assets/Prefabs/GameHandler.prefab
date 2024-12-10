@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eb38dd920a34aef9118d9bbebf5947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heart1: {fileID: 4120116486930624815, guid: e3f1de1519bb35d41b6de09ad25804d0, type: 3}
-  heart2: {fileID: 3797139865550213053, guid: f9f5fcad4b0d13241a75e3e63d07385b, type: 3}
-  heart3: {fileID: 4118222672129274756, guid: 6cf8bf9830e1de0439a19e0cf7f2f519, type: 3}
+  heart1: {fileID: 0}
+  heart2: {fileID: 0}
+  heart3: {fileID: 0}
   StartPlayerHealth: 100
   tokensText: {fileID: 2773501157145071583, guid: 11ff3e9a44ed30f498fca28370e257d3, type: 3}
   isDefending: 0
