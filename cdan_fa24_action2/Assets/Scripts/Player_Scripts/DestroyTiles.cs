@@ -27,9 +27,13 @@ public class DestroyTiles : MonoBehaviour{
 		if (gameHandlerObj.GetComponent<DigEnergyMeter>().canDig==true){
 			if (Input.GetButtonDown("DigUp")){
 				destroyTileAreaUp();
+				StopCoroutine(PauseMove());
+				StartCoroutine(PauseMove());
 			}
 			if (Input.GetButtonDown("DigDown")){
 				destroyTileAreaDown();
+				StopCoroutine(PauseMove());
+				StartCoroutine(PauseMove());
 			}
 		}
 	}
@@ -78,6 +82,12 @@ public class DestroyTiles : MonoBehaviour{
                      }
               }
        }
+
+		IEnumerator PauseMove(){
+			gameObject.GetComponent<PlayerMove>().isDigging = true;
+			yield return new WaitForSeconds(0.2f);
+			gameObject.GetComponent<PlayerMove>().isDigging = false;
+		}
 
        IEnumerator DigVFX(Vector3 tilePos){
 			Vector3 tilePosPlus = new Vector3(tilePos.x, tilePos.y, tilePos.z -0.5f);

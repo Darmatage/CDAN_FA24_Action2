@@ -17,6 +17,9 @@ public class PlayerMove : MonoBehaviour{
 	public Transform thoughtBubbleCtrl;
 	private Vector3 thoughtBubblePos; 
 
+	//pause motion when digging):
+	public bool isDigging = false;
+
     void Start(){	
         animator = gameObject.GetComponentInChildren<Animator>();
         rb2D = transform.GetComponent<Rigidbody2D>();
@@ -28,7 +31,7 @@ public class PlayerMove : MonoBehaviour{
     void Update(){
         //NOTE: Horizontal axis: [a] / left arrow is -1, [d] / right arrow is 1
         hMove = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
-        if (isAlive == true){
+        if ((isAlive == true)&&(isDigging==false)){
             transform.position = transform.position + hMove * runSpeed * Time.deltaTime;
 
             if (Input.GetAxis("Horizontal") != 0){

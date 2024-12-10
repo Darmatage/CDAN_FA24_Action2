@@ -506,8 +506,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: CREDITS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7e8b0b2eaaac55d48a183570cde0924c, type: 2}
+  m_sharedMaterial: {fileID: 5257134908215194157, guid: 7e8b0b2eaaac55d48a183570cde0924c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1328,11 +1328,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186032283681361014, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_fontSize
-      value: 40
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 5186032283681361014, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_fontSizeBase
-      value: 40
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 7362234425817828330, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_Type

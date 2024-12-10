@@ -77,6 +77,9 @@ public class NPC_PatrolSequencePoints : MonoBehaviour {
 		if (other.gameObject.tag=="Player"){
 			anim.SetTrigger("Attack");
 			GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().playerGetHit(damage);
+			if (!isAnt){
+				
+			}
 		}
 	}
 

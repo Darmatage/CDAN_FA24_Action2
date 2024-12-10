@@ -481,7 +481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 246}
+  m_AnchoredPosition: {x: 0, y: 212}
   m_SizeDelta: {x: 700, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &713833248
@@ -506,8 +506,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: YOU LOSE :(
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 88bb0729d45578146b471fcabd8065d2, type: 2}
-  m_sharedMaterial: {fileID: -7377753843168426594, guid: 88bb0729d45578146b471fcabd8065d2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7e8b0b2eaaac55d48a183570cde0924c, type: 2}
+  m_sharedMaterial: {fileID: 5257134908215194157, guid: 7e8b0b2eaaac55d48a183570cde0924c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -675,7 +675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4465024024634195935, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -152
+      value: -290
       objectReference: {fileID: 0}
     - target: {fileID: 4465024024634195935, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -996,8 +996,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 300}
+  m_AnchoredPosition: {x: 0, y: 2.969}
+  m_SizeDelta: {x: 650, y: 226.062}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421138196
 MonoBehaviour:
@@ -1019,8 +1019,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The dangers of The Burrow proved to be too much for a small mouse like
-    you.
+  m_text: The dangers of the Burrow proved too much for a small mouse like you.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1047,13 +1046,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1326,7 +1325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4465024024634195935, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -56
+      value: -194
       objectReference: {fileID: 0}
     - target: {fileID: 4465024024634195935, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1346,11 +1345,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5186032283681361014, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_fontSize
-      value: 40
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 5186032283681361014, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_fontSizeBase
-      value: 40
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 8854916146032199008, guid: ee397bf2705014add8068279532cf95a, type: 3}
       propertyPath: m_Name
