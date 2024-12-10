@@ -547,6 +547,7 @@ GameObject:
   - component: {fileID: 5203215123409615695}
   - component: {fileID: 2912531041453716511}
   - component: {fileID: 2641808262490980107}
+  - component: {fileID: 1564474574824620375}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -701,6 +702,7 @@ MonoBehaviour:
   isAlive: 1
   dashCloudVFX: {fileID: 4428130070760069791}
   thoughtBubbleCtrl: {fileID: 5359837317527061853}
+  isDigging: 0
 --- !u!114 &3966433329784388505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -818,8 +820,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e73d5b2f218c934f87ba7183082df69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  rb2D: {fileID: 0}
+  timeToShowHurt: 0.5
+--- !u!114 &1564474574824620375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6265757257430852507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debf4b8cba61ca540b25bee2c512c9d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6545848793591147659
 GameObject:
   m_ObjectHideFlags: 0
