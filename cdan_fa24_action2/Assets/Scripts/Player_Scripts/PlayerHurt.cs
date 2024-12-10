@@ -6,6 +6,8 @@ public class PlayerHurt: MonoBehaviour{
 
       private Animator anim;
       private Rigidbody2D rb2D;
+
+//Color change:
 	  private SpriteRenderer rend;
 	  private Color rendColor;
 	  public float timeToShowHurt = 0.5f;
