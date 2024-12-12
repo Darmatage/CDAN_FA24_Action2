@@ -206,4 +206,4 @@ MonoBehaviour:
   playerInRange: 0
   monologueLength: 0
   digLeave: 0
-  isBunny: 0
+  isBunny: 1
