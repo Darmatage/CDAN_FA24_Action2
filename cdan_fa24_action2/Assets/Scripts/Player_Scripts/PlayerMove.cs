@@ -10,7 +10,8 @@ public class PlayerMove : MonoBehaviour{
     public static float runSpeed = 10f;
     public float startSpeed = 10f;
     public bool isAlive = true;
-    //public AudioSource WalkSFX;
+    public AudioSource sfx_mouserun1;
+    public AudioSource sfx_mouserun2;
     private Vector3 hMove;
 
 	public GameObject dashCloudVFX;
@@ -36,13 +37,13 @@ public class PlayerMove : MonoBehaviour{
 
             if (Input.GetAxis("Horizontal") != 0){
                        animator.SetBool ("Walk", true);
-                //       if (!WalkSFX.isPlaying){
-                //             WalkSFX.Play();
-                //      }
+                       if (!sfx_mouserun1.isPlaying){
+                             sfx_mouserun1.Play();
+                      }
             }
             else{
                      animator.SetBool ("Walk", false);
-                //      WalkSFX.Stop();
+                      sfx_mouserun1.Stop();
             }
 
             // Turning: Reverse if input is moving the Player right and Player faces left

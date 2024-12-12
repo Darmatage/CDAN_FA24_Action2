@@ -12,7 +12,7 @@ public class PlayerHurt: MonoBehaviour{
 	  private Color rendColor;
 	  public float timeToShowHurt = 0.5f;
 
-      void Start(){
+    void Start(){
            anim = gameObject.GetComponentInChildren<Animator>();
            rb2D = transform.GetComponent<Rigidbody2D>();
 		   rend = GetComponentInChildren<SpriteRenderer>();

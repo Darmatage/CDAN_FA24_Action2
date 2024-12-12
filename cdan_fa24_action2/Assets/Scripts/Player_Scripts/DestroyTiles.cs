@@ -10,8 +10,9 @@ public class DestroyTiles : MonoBehaviour{
 	private List<Vector3> tileWorldLocations;
 	public float rangeDestroyUp = 1f;
 	public float rangeDestroyDown = 2f;
-	   
-	public bool canExplode = true;
+    public AudioSource sfx_digging;
+
+    public bool canExplode = true;
 	public GameObject digParticlesFX;
 
 	public Transform digPointUp; 
@@ -26,15 +27,17 @@ public class DestroyTiles : MonoBehaviour{
 	void Update(){
 		if (gameHandlerObj.GetComponent<DigEnergyMeter>().canDig==true){
 			if (Input.GetButtonDown("DigUp")){
-				destroyTileAreaUp();
+                destroyTileAreaUp();
 				StopCoroutine(PauseMove());
 				StartCoroutine(PauseMove());
-			}
+                sfx_digging.Play();
+            }
 			if (Input.GetButtonDown("DigDown")){
-				destroyTileAreaDown();
+                destroyTileAreaDown();
 				StopCoroutine(PauseMove());
 				StartCoroutine(PauseMove());
-			}
+                sfx_digging.Play();
+            }
 		}
 	}
 

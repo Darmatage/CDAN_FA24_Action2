@@ -14,7 +14,7 @@ public class PlayerJump : MonoBehaviour{
     public bool canJump = false;
     public int jumpTimes = 0;
     public bool isAlive = true;
-    //public AudioSource JumpSFX;
+    public AudioSource sfx_jump;
 
 	public bool isGroundedCheck = false;
 
@@ -70,7 +70,7 @@ public class PlayerJump : MonoBehaviour{
 		}
 
 		anim.SetTrigger("Jump");
-        // JumpSFX.Play();
+         sfx_jump.Play();
 
         //Vector2 movement = new Vector2(rb.velocity.x, jumpForce);
         //rb.velocity = movement;
