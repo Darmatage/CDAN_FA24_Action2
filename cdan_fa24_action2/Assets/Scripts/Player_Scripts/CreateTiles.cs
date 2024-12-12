@@ -12,6 +12,7 @@ public class CreateTiles : MonoBehaviour{
        public RuleTile newTile;
        private List<Vector3> tileWorldLocations;
        public float rangePaint = 0.5f;
+       public AudioSource sfx_piling;
        //public bool canPaint = true;
        //public GameObject paintFX;
 
@@ -25,7 +26,8 @@ public class CreateTiles : MonoBehaviour{
 		if (gameHandlerObj.GetComponent<DigEnergyMeter>().canPile==true){
 			if (Input.GetKeyDown("s")){
 				CreateTileArea();
-			}
+                sfx_piling.Play();
+            }
 		}
 	}
 
