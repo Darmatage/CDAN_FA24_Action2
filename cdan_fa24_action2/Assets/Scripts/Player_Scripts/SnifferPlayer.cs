@@ -16,12 +16,15 @@ public class SnifferPlayer : MonoBehaviour{
 	float theTimer = 0f;
 	public float timeToNextScent = 5f;
 
+	public DoorOpenable door;
+
 	void Awake(){
 		//initialize NPC array:
 		FindFamily();
 	}
 
 	void Start() {
+		door = GameObject.FindWithTag("Door").GetComponent<DoorOpenable>();
 		//LEVEL 1: turn off sniffer until encounter bunny:
 		if (SceneManager.GetActiveScene().name == "Level1"){
 			canSniff = false;
@@ -56,10 +59,12 @@ public class SnifferPlayer : MonoBehaviour{
 //Build the NPC array (called at start and by the leaving of a family member in NPCMonologue):
 	public void FindFamily(){
 		familyMember = GameObject.FindGameObjectsWithTag("Family");
-		if (familyMember != null){
+		//if (familyMember != null){
+		if (familyMember[0] != null){
 			canSniff = true;
 		} else {
 			canSniff = false;
+			door.OpenDoor();
 		}
 	}
 

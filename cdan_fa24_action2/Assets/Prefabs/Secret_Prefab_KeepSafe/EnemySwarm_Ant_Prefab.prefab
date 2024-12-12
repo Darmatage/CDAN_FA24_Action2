@@ -131,7 +131,7 @@ MonoBehaviour:
   moveForward: 1
   faceRight: 0
   isAnt: 1
-  damage: 6
+  damage: 10
   knockBackForce: 5
 --- !u!1 &7252719410669535321
 GameObject:

@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8151516291173280085}
   - component: {fileID: 2935161873048283906}
-  - component: {fileID: 1575906779088463698}
   - component: {fileID: 2112947521668166702}
+  - component: {fileID: 1575906779088463698}
   m_Layer: 0
   m_Name: Projectile_enemy
   m_TagString: Untagged
@@ -81,22 +81,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1575906779088463698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2522433697211570938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7605fabace759e4a9325cf9b4e4d256, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 8
-  speed: 10
-  hitEffectAnim: {fileID: 8222819485327453206, guid: 0381d6a3f74716c47a25c0072af022d6, type: 3}
-  SelfDestructTime: 2
 --- !u!50 &2112947521668166702
 Rigidbody2D:
   serializedVersion: 4
@@ -124,6 +108,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1575906779088463698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2522433697211570938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7605fabace759e4a9325cf9b4e4d256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 12
+  speed: 10
+  hitEffectAnim: {fileID: 8222819485327453206, guid: 0381d6a3f74716c47a25c0072af022d6, type: 3}
+  SelfDestructTime: 2
 --- !u!1 &6826283108955437032
 GameObject:
   m_ObjectHideFlags: 0

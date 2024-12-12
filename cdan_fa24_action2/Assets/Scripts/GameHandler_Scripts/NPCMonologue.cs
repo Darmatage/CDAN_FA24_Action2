@@ -62,7 +62,9 @@ public class NPCMonologue : MonoBehaviour {
 			monologueMNGR.CloseMonologue();
 			//anim.SetBool("Chat", false);
 			//Debug.Log("Player left range");
-			StartCoroutine(DigAndLeave());
+			if (isBunny){
+				StartCoroutine(DigAndLeave());
+			}
 		}
 	}
 
