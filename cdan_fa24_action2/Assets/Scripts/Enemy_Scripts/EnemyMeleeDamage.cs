@@ -8,7 +8,7 @@ public class EnemyMeleeDamage : MonoBehaviour {
        public GameObject healthLoot;
        public int maxHealth = 100;
        public int currentHealth;
-
+       public AudioSource sfx_enemydead2;
        void Start(){
               rend = GetComponentInChildren<Renderer> ();
               anim = GetComponentInChildren<Animator> ();
@@ -22,7 +22,8 @@ public class EnemyMeleeDamage : MonoBehaviour {
               anim.SetTrigger ("Hurt");
               if (currentHealth <= 0){
                      Die();
-              }
+                     sfx_enemydead2.Play();
+        }
        }
 
 	void Die(){

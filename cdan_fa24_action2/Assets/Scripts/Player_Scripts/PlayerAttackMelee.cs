@@ -12,6 +12,7 @@ public class PlayerAttackMelee : MonoBehaviour
     private float nextAttackTime = 0f;
     public int attackDamage = 30;
     public LayerMask enemyLayers;
+    public AudioSource sfx_swordattack;
 
     void Start()
     {
@@ -25,7 +26,8 @@ public class PlayerAttackMelee : MonoBehaviour
 				nextAttackTime = Time.time + 1f / attackRate;
 				if (SwordManager.hasSword){
                 	Attack();
-				}
+                    sfx_swordattack.Play();
+                }
             }
         }
     }

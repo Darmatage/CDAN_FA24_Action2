@@ -9,8 +9,8 @@ public class EnemyMoveHit : MonoBehaviour {
 	public float speed = 4f;
 	private Transform target;
 	public int damage = 10;
-	public float knockBackForce = 5f; 
-
+	public float knockBackForce = 5f;
+	public AudioSource sfx_catpurr;
 	public int EnemyLives = 3;
 	private GameHandler gameHandler;
 
@@ -56,9 +56,10 @@ public class EnemyMoveHit : MonoBehaviour {
 			isAttacking = true;
 			anim.SetTrigger("Attack");
 			gameHandler.playerGetHit(damage);
+            sfx_catpurr.Play();
 
-			//knockback:
-			other.gameObject.GetComponent<Player_EndKnockBack>().EndKnockBack();
+            //knockback:
+            other.gameObject.GetComponent<Player_EndKnockBack>().EndKnockBack();
 			//Add force to the player, pushing them back without teleporting:
 			Rigidbody2D pushRB = other.gameObject.GetComponent<Rigidbody2D>();
 			Vector2 moveDirectionPush = rb2D.transform.position - other.transform.position;

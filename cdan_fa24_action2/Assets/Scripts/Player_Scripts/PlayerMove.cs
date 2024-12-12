@@ -57,7 +57,8 @@ public class PlayerMove : MonoBehaviour{
 				runSpeed = startSpeed *2;
 				GameObject.FindWithTag("GameHandler").GetComponent<DigEnergyMeter>().isDashing=true;
 				GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().isDefending=true;
-				dashCloudVFX.SetActive(true);
+                sfx_mouserun2.Play();
+                dashCloudVFX.SetActive(true);
 			}
 			if ((Input.GetKeyUp("left shift"))||(Input.GetKeyUp("right shift"))){
 				runSpeed = startSpeed;
