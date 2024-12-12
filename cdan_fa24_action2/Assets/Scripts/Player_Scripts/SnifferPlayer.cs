@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SnifferPlayer : MonoBehaviour{
-	private GameObject[] familyMember;
+	public GameObject[] familyMember;
 	//public List<bool> familyIsMissing = new List<bool>();
 	public GameObject scentPrefab;
 	public GameObject thoughtBubble, bubble1, bubble2, bubble3;
@@ -77,7 +77,7 @@ public class SnifferPlayer : MonoBehaviour{
 		for (int i=0; i < familyMember.Length; i++){
 			yield return new WaitForSeconds((float)i * 2);
 			GameObject theScent = Instantiate(scentPrefab, transform.position, Quaternion.identity);
-
+			
 		//Send scent player position and family number:
 			theScent.GetComponent<SniffScent>().destination = transform.position;
 			theScent.GetComponent<SniffScent>().SetFamilyNumber(i);
