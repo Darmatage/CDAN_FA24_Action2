@@ -55,12 +55,29 @@ public class GameHandler : MonoBehaviour {
 	public void playerGetHit(int damage){
 		if (isDefending == false){
 			playerHealth -= damage;
+			
+			//take damage:
 			if (damage > 0){
 				//play GetHit animation
-				StartCoroutine(DamaageImmunity());
+				StartCoroutine(DamageImmunity());
 				player.GetComponent<PlayerHurt>().playerHit();      
 			}
-			if (playerHealth > 0){
+			//get healing: (damage < 0):
+			else {
+				if (playerHealth > StartPlayerHealth){
+					playerHealth = StartPlayerHealth;
+					updateStatsDisplay();
+				}
+				/*
+				if ((playerHealth >= StartPlayerHealth)&&(playerHearts < 3)){
+					playerHearts +=1;
+					playerHealth = damage;
+					updateStatsDisplay();
+				}
+				*/
+			}
+			
+		if (playerHealth > 0){
 				if (playerHearts == 3){
 					heart3fill = (float)playerHealth / StartPlayerHealth;
 				}
@@ -87,13 +104,10 @@ public class GameHandler : MonoBehaviour {
 			playerDies();
 		}
 
-           //if (playerHealth > StartPlayerHealth){
-           //       playerHealth = StartPlayerHealth;
-           //       updateStatsDisplay();
-           //}
+           
       }
 
-	IEnumerator DamaageImmunity(){
+	IEnumerator DamageImmunity(){
 		isDefending = true;
 		yield return new WaitForSeconds(0.1f);
 		isDefending = false;

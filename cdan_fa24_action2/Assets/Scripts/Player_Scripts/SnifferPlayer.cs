@@ -56,15 +56,26 @@ public class SnifferPlayer : MonoBehaviour{
 		}
 	}
 
-//Build the NPC array (called at start and by the leaving of a family member in NPCMonologue):
+//Build the NPC array (called at start and by family member leaving in NPCMonologue.cs):
 	public void FindFamily(){
 		familyMember = GameObject.FindGameObjectsWithTag("Family");
-		//if (familyMember != null){
-		if (familyMember[0] != null){
-			canSniff = true;
-		} else {
+
+		//no family left to find:
+		//if (familyMember == null){
+		if (familyMember.Length == 0){
 			canSniff = false;
 			door.OpenDoor();
+		}
+		//if family array is not null: 
+		else {
+			//if the first element is not null, keep sniffing:
+			if (familyMember[0] != null){
+				canSniff = true;
+			//if the first element is null, open door:
+			} else {
+				canSniff = false;
+				door.OpenDoor();
+			}
 		}
 	}
 
@@ -100,28 +111,30 @@ public class SnifferPlayer : MonoBehaviour{
 	}
 
 	IEnumerator ThoughtsDisplay(int famNum){
+		//check for family member escape after scent is spawned:
+		if (famNum < familyMember.Length){
+			//show everything:
+			bubble1.SetActive(true);
+			yield return new WaitForSeconds(0.1f);
+			bubble2.SetActive(true);
+			yield return new WaitForSeconds(0.1f);
+			bubble3.SetActive(true);
+			yield return new WaitForSeconds(0.1f);
+			thoughtBubble.SetActive(true);
+			thoughtSprite.sprite= familyMember[famNum].GetComponentInChildren<SpriteRenderer>().sprite;
 
-		//show everything:
-		bubble1.SetActive(true);
-		yield return new WaitForSeconds(0.1f);
-		bubble2.SetActive(true);
-		yield return new WaitForSeconds(0.1f);
-		bubble3.SetActive(true);
-		yield return new WaitForSeconds(0.1f);
-		thoughtBubble.SetActive(true);
-		thoughtSprite.sprite= familyMember[famNum].GetComponentInChildren<SpriteRenderer>().sprite;
+			//full display time:
+			yield return new WaitForSeconds(4f);
 
-		//full display time:
-		yield return new WaitForSeconds(4f);
-
-		//hide everything:
-		thoughtBubble.SetActive(false);
-		yield return new WaitForSeconds(0.1f);
-		bubble3.SetActive(false);
-		yield return new WaitForSeconds(0.1f);
-		bubble2.SetActive(false);
-		yield return new WaitForSeconds(0.1f);
-		bubble1.SetActive(false);
+			//hide everything:
+			thoughtBubble.SetActive(false);
+			yield return new WaitForSeconds(0.1f);
+			bubble3.SetActive(false);
+			yield return new WaitForSeconds(0.1f);
+			bubble2.SetActive(false);
+			yield return new WaitForSeconds(0.1f);
+			bubble1.SetActive(false);
+		}
 	}
 
 }

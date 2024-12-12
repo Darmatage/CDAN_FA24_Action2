@@ -70,12 +70,12 @@ public class NPCMonologue : MonoBehaviour {
 
 
 
-	//family NPCs:
+	//family NPCs (activated by NPCMonologueManager.cs):
 	public void DigActivate(){
 		if (digLeave == true){
 			gameObject.tag = "Untagged";
-			GameObject.FindWithTag("Player").GetComponent<SnifferPlayer>().FindFamily();
 			StartCoroutine(DigAndLeave());
+			GameObject.FindWithTag("Player").GetComponent<SnifferPlayer>().FindFamily();
 		}
 	}
 

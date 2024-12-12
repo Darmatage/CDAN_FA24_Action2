@@ -114,7 +114,7 @@ MonoBehaviour:
   speed: 4
   damage: 20
   knockBackForce: 5
-  EnemyLives: 3
+  EnemyLives: 200
   attackRange: 10
   isAttacking: 0
 --- !u!114 &6280805672304027251
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthLoot: {fileID: 1701865989938566299, guid: 35d67ac730a8c304f80609adf2bb491c, type: 3}
-  maxHealth: 60
+  maxHealth: 200
   currentHealth: 0
 --- !u!1 &4179138221039150712
 GameObject:
