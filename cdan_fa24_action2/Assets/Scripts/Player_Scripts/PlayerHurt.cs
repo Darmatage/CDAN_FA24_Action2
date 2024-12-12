@@ -6,6 +6,7 @@ public class PlayerHurt: MonoBehaviour{
 
       private Animator anim;
       private Rigidbody2D rb2D;
+	  public AudioSource hurtSFX;
 
 //Color change:
 	  private SpriteRenderer rend;
@@ -21,6 +22,7 @@ public class PlayerHurt: MonoBehaviour{
 
 	public void playerHit(){
 		anim.SetTrigger ("Hurt");
+		hurtSFX.Play();
 		rend.material.color = new Color(2.4f, 0.9f, 0.9f, 1f);
 		StartCoroutine(ResetColor());
 	}

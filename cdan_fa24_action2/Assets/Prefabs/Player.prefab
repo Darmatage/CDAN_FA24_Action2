@@ -1597,9 +1597,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e73d5b2f218c934f87ba7183082df69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfx_mousedead: {fileID: 1967257426007027141}
+  hurtSFX: {fileID: 8876031059446075712}
   timeToShowHurt: 0.5
-  sfx_mousehurt: {fileID: 8876031059446075712}
 --- !u!114 &1564474574824620375
 MonoBehaviour:
   m_ObjectHideFlags: 0
