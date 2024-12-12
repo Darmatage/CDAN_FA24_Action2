@@ -57,9 +57,11 @@ public class NPCMonologueManager : MonoBehaviour {
 			monologueText.text = monologue[counter];
 			counter +=1;
 		}
-		else { //when lines are complete:
-			familyMember.DigActivate();
+		//when lines are complete:
+		else { 
 			CloseMonologue();
+			familyMember.DigActivate();
+			
 		}
 	}
 
