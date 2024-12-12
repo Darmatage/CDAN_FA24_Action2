@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066738690333678337, guid: 2a0bf17eaa0ad4a5696fa0444b2439cf, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1881369501715547567, guid: 2a0bf17eaa0ad4a5696fa0444b2439cf, type: 3}
       propertyPath: m_IsActive
@@ -162,6 +162,14 @@ PrefabInstance:
     - target: {fileID: 2274856379626545491, guid: 2a0bf17eaa0ad4a5696fa0444b2439cf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873776913066070825, guid: 2a0bf17eaa0ad4a5696fa0444b2439cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 787796661055855535}
+    - target: {fileID: 2873776913066070825, guid: 2a0bf17eaa0ad4a5696fa0444b2439cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
       objectReference: {fileID: 0}
     - target: {fileID: 3335430666864516612, guid: 2a0bf17eaa0ad4a5696fa0444b2439cf, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -261,7 +269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4656141877136188467, guid: 2a0bf17eaa0ad4a5696fa0444b2439cf, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4832935790963435011, guid: 2a0bf17eaa0ad4a5696fa0444b2439cf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -277,7 +285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387560123290064032, guid: 2a0bf17eaa0ad4a5696fa0444b2439cf, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

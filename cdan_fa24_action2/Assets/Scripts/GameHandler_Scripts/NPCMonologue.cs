@@ -82,8 +82,11 @@ public class NPCMonologue : MonoBehaviour {
 		anim.SetTrigger("Dig");
 		anim.SetBool("isDirt", true);
 		yield return new WaitForSeconds(2f);
-
-		//Destroy(gameObject); 
+		
+		//delete family from level:
+		if (!isBunny){
+			Destroy(gameObject);
+		} 
 	}
 
 

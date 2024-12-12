@@ -39,9 +39,13 @@ public class GameHandler_PauseMenu : MonoBehaviour {
         }
 
         public void Pause(){
+			if (!GameisPaused){ 
                 pauseMenuUI.SetActive(true);
                 Time.timeScale = 0f;
                 GameisPaused = true;
+			} else {
+				Resume();
+			}
         }
 
         public void Resume(){
